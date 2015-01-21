@@ -40,8 +40,8 @@ endif
 set breakindent                         " Every wrapped line will continue visually indented
 let &showbreak='↖ '                     " String to put at the start of lines that have been wrapped.
 set cmdheight=1                         " command line height
-set complete-=i,w,b,u,t                 " Searching includes can be slow
-set completeopt=longest,menuone,preview " A comma separated list of options for Insert mode completion
+" set complete-=i,w,b,u,t                 " Searching includes can be slow
+" set completeopt=longest,menuone,preview " A comma separated list of options for Insert mode completion
 set display=lastline                    " Change the way text is displayed.
 set joinspaces                          " Put spaces between lines joined with the > command.
 set lazyredraw                          " Do not redraw the screen during macro execution.
@@ -82,7 +82,7 @@ endif
 " ---------------
 syntax enable
 
-set synmaxcol=300
+set synmaxcol=300 " no syntax for very long lines
 
 set hlsearch " When there is a previous search pattern, highlight all its matches.
 set incsearch " While typing a search command, show where the pattern, as it was typed so far, matches.
