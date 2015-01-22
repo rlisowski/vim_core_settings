@@ -262,7 +262,6 @@ function! <SID>StripTrailingWhitespaces(manual)
   endif
 endfunction
 
-nnoremap <silent> <F3> :call <SID>StripTrailingWhitespaces(1)<CR>
 autocmd vimrc BufWritePre * :call <SID>StripTrailingWhitespaces(0)
 " }}
 
