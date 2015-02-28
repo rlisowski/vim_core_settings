@@ -160,7 +160,7 @@ augroup vimrc
   autocmd!
 augroup END
 
-autocmd vimrc VimResized * :wincmd =         " Resize splits when the window is resized
+" autocmd vimrc VimResized * :wincmd =         " Resize splits when the window is resized
 
 " autosave kudos to http://blog.unixphilosopher.com/2015/02/a-more-betterer-autosave-in-vim.html
 autocmd vimrc InsertLeave,TextChanged * if expand('%') != '' | update | endif
