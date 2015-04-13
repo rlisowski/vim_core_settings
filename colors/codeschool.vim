@@ -57,6 +57,7 @@ if version >= 700 " Vim 7.x specific colors
  hi Pmenu ctermfg=153 ctermbg=NONE cterm=NONE guifg=#bcdbff guibg=NONE gui=NONE
  hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3f4b52 gui=NONE
  hi Search ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
+ hi lCursor ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
  " ?"
  hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
  let &colorcolumn="80,".join(range(120,999),",")
