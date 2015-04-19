@@ -67,6 +67,8 @@ endif
 
 " :w!! saves a file as root
 cmap w!! w !sudo tee % >/dev/null<CR>
+" fullscreen mode for gvim
+map <silent> <F11> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
 " -------------
 "  lang
