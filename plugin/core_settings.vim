@@ -247,6 +247,9 @@ map <A-0> :tablast<CR>
 " Functions
 " ----------------------------------------
 
+" find all todoso
+command -nargs=? -complete=file Todo execute "Ags" 'TODO\|FIXME\|XXX' <f-args>
+
 " ---------------
 " Trailing Whitespaces
 " --------------- {{
