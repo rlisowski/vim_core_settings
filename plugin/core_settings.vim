@@ -27,6 +27,8 @@ set backup
 set backupskip+=*.tmp,crontab.* " do not make backup for this files
 set backupdir=$HOME/.vim/backup
 set directory=$HOME/.vim/tmp
+set undofile
+set undodir=~/.vim/undodir
 
 " ---------------
 " UI
