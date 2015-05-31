@@ -158,7 +158,9 @@ set relativenumber                " show lines number
 set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                       " unix end of line
-set cryptmethod=blowfish2         " encryption method :X or -x in command line
+if !has('nvim')
+  set cryptmethod=blowfish2         " encryption method :X or -x in command line
+endif
 
 augroup vimrc
   autocmd!
