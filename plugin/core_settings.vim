@@ -110,6 +110,7 @@ set laststatus=2                " always show status line
 set showcmd                     " Show (partial) command in the last line of the screen
 set shortmess=aOstT             " shortens messages to avoid 'press a key' prompt
 set linebreak                   " If on, Vim will wrap long lines at a character in 'breakat' rather than at the last character that fits on the screen
+set whichwrap+=<,>,h,l,[,]      " move to the previous/next line after reaching first/last character in the line
 " Number of lines to keep above or below the cursor.
 if !&scrolloff
   set scrolloff=3
