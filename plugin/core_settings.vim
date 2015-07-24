@@ -220,9 +220,10 @@ endif
 
 " These two options together determine the behavior when part of a
 " mapped key sequence or keyboard code has been received
-set notimeout
+set timeout
 set ttimeout
-set ttimeoutlen=50
+set ttimeoutlen=100
+set timeoutlen=2000
 
 nmap <A-j> ]e==
 nmap <A-k> [e==
