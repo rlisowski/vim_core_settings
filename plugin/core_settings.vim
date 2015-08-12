@@ -6,6 +6,9 @@ endif
 
 filetype plugin indent on     " required!
 
+set nocompatible
+set hidden
+
 set shell=/bin/bash
 set noexrc                     " don't use local version of .(g)vimrc, .exrc
 set autoindent                 " Copy indent from current line when starting a new line
