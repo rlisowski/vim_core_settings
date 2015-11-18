@@ -68,7 +68,7 @@ set linespace=2                     " more space between lines
 set guicursor+=a:blinkon0           " Disable gui cursor blinking
 set ttyfast                         " Indicates a fast terminal connection.
 " disable visual bell
-set visaulbell
+set visualbell
 set t_vb=
 
 if exists('+colorcolumn')
