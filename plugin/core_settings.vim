@@ -14,7 +14,9 @@ set noexrc                     " don't use local version of .(g)vimrc, .exrc
 set autoindent                 " Copy indent from current line when starting a new line
 set autowriteall               " Automatically save before commands like :next and :make
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
-set encoding=utf-8             " Use UTF-8 everywhere.
+if !has('nvim')
+  set encoding=utf-8             " Use UTF-8 everywhere.
+endif
 
 " ---------------
 " Color
@@ -65,6 +67,9 @@ set virtualedit=all                 " enable virtualedit, useful for visual bloc
 set linespace=2                     " more space between lines
 set guicursor+=a:blinkon0           " Disable gui cursor blinking
 set ttyfast                         " Indicates a fast terminal connection.
+" disable visual bell
+set visaulbell
+set t_vb=
 
 if exists('+colorcolumn')
   set colorcolumn=120
