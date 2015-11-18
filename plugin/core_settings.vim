@@ -204,14 +204,6 @@ set mouse=a                     " enable mouse
 set mousehide                   " Hide mouse after chars typed
 set mousemodel=popup            " the right mouse button causes a small pop-up menu to appear
 
-" ---------------
-" Switch between buffers
-" --------------- {{
-noremap <tab> :bn<CR>
-noremap <S-tab> :bp<CR>
-nmap <leader>d :bprevious<CR>:bdelete #<CR> " Close buffer
-nmap <leader>D :bufdo bd<CR>                " Close all buffers
-" }}
 
 " ---------------
 " move lines
