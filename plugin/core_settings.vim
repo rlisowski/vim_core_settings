@@ -222,9 +222,9 @@ set mousemodel=popup            " the right mouse button causes a small pop-up m
 " These two options together determine the behavior when part of a
 " mapped key sequence or keyboard code has been received
 set timeout
-set timeoutlen=1000
+set timeoutlen=200
 set ttimeout
-set ttimeoutlen=0
+set ttimeoutlen=200
 set matchtime=0
 
 " moving lines
