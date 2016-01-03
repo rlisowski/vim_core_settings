@@ -47,8 +47,8 @@ endif
 set breakindent                         " Every wrapped line will continue visually indented
 let &showbreak='↖ '                     " String to put at the start of lines that have been wrapped.
 set cmdheight=1                         " command line height
-" set complete-=i,w,b,u,t                 " Searching includes can be slow
-" set completeopt=longest,menuone,preview " A comma separated list of options for Insert mode completion
+set complete-=i,w,b,u,t                 " Searching includes can be slow
+set completeopt=longest,menuone,preview " A comma separated list of options for Insert mode completion
 set display=lastline                    " Change the way text is displayed.
 set joinspaces                          " Put spaces between lines joined with the > command.
 set lazyredraw                          " Do not redraw the screen during macro execution.
@@ -222,16 +222,46 @@ set mousemodel=popup            " the right mouse button causes a small pop-up m
 " These two options together determine the behavior when part of a
 " mapped key sequence or keyboard code has been received
 set timeout
+set timeoutlen=1000
 set ttimeout
-set ttimeoutlen=100
-set timeoutlen=2000
+set ttimeoutlen=0
+set matchtime=0
 
+" moving lines
 nmap <A-j> ]e==
 nmap <A-k> [e==
 imap <A-j> <Esc>]e==i
 imap <A-k> <Esc>[e==i
 vmap <A-j> ]egv=gv
 vmap <A-k> [egv=gv
+
+if has("gui_macvim")
+  " moving lines
+  nmap ∆ ]e==
+  nmap Ż [e==
+  imap ∆ <Esc>]e==i
+  imap Ż <Esc>[e==i
+  vmap ∆ ]egv=gv
+  vmap Ż [egv=gv
+
+  " Press Ctrl-Tab to switch between open tabs (like browser tabs) to
+  " the right side. Ctrl-Shift-Tab goes the other way.
+  noremap <D-Right> :tabnext<CR>
+  noremap <D-Left> :tabprev<CR>
+
+  " Switch to specific tab numbers with Command-number
+  noremap <D-1> :tabn 1<CR>
+  noremap <D-2> :tabn 2<CR>
+  noremap <D-3> :tabn 3<CR>
+  noremap <D-4> :tabn 4<CR>
+  noremap <D-5> :tabn 5<CR>
+  noremap <D-6> :tabn 6<CR>
+  noremap <D-7> :tabn 7<CR>
+  noremap <D-8> :tabn 8<CR>
+  noremap <D-9> :tabn 9<CR>
+  " Command-0 goes to the last tab
+  noremap <D-0> :tablast<CR>
+endif
 " }}
 
 " ---------------
