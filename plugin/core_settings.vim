@@ -8,6 +8,7 @@ filetype plugin indent on     " required!
 
 set nocompatible
 set hidden
+set showtabline=0
 
 set shell=/bin/bash
 set noexrc                     " don't use local version of .(g)vimrc, .exrc
