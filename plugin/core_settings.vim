@@ -66,6 +66,7 @@ set cpoptions+=$                    " show $ on the end of selection
 set virtualedit=all                 " enable virtualedit, useful for visual block editing
 set linespace=2                     " more space between lines
 set guicursor+=a:blinkon0           " Disable gui cursor blinking
+set guioptions-=e                   " use text tabs
 set ttyfast                         " Indicates a fast terminal connection.
 " disable visual bell
 set visualbell

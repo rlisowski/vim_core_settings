@@ -32,10 +32,9 @@ hi Folded ctermfg=247 ctermbg=16 cterm=NONE guifg=#9a9a9a guibg=#182227 gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f0f0f0 guibg=NONE gui=bold
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3f4b52 gui=NONE
 
-" hi TabLine ctermfg=231 ctermbg=NONE cterm=bold guifg=#f0f0f0 guibg=NONE gui=bold
-hi TabLine ctermfg=231 ctermbg=242 cterm=bold
-hi TabLineFill ctermfg=231 ctermbg=242 cterm=bold
-" hi TabLineSel ctermfg=231 ctermbg=NONE cterm=bold guifg=#f0f0f0 guibg=NONE gui=bold
+hi TabLine ctermfg=231 ctermbg=242 cterm=NONE guifg=#aea7ab guibg=#2e373b gui=NONE
+hi TabLineSel ctermfg=235 ctermbg=235 cterm=bold guifg=#f0f0f0 guibg=NONE gui=bold
+hi TabLineFill ctermfg=235 ctermbg=235 cterm=NONE guifg=#2e373b guibg=NONE gui=bold
 
 hi SpecialKey ctermfg=59 ctermbg=0 cterm=NONE guifg=#414e58 guibg=#252c31 gui=NONE
 
