@@ -24,6 +24,9 @@ endif
 set background=dark
 colorscheme codeschool
 highlight clear SignColumn
+if has("nvim")
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 
 " ---------------
 " Backups

@@ -14,10 +14,6 @@ let g:colors_name = "codeschool"
 " General colors
 hi Normal ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE
 hi NonText ctermfg=59 ctermbg=0 cterm=NONE guifg=#414e58 guibg=#252c31 gui=NONE
-if has('nvim')
-  hi Normal ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c21 gui=NONE
-  hi NonText ctermfg=59 ctermbg=0 cterm=NONE guifg=#414e58 guibg=#232c21 gui=NONE
-endif
 
 hi SignColumn ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE
 
