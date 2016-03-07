@@ -283,6 +283,8 @@ map <A-9> 9gt
 map <A-0> :tablast<CR>
 " }}
 
+set tags=./tags,tags,./.git/tags; " use ctags
+
 " ----------------------------------------
 " Functions
 " ----------------------------------------
