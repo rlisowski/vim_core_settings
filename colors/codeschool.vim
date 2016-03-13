@@ -19,6 +19,7 @@ hi SignColumn ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=N
 
 hi Cursor ctermfg=16 ctermbg=145 cterm=NONE guifg=#182227 guibg=#9ea7a6 gui=NONE
 hi LineNr ctermfg=102 ctermbg=235 cterm=NONE guifg=#84898c guibg=#2a343a gui=NONE
+hi CursorLineNr ctermfg=102 ctermbg=235 cterm=NONE guifg=#8db600 guibg=#2a343a gui=NONE
 
 hi VertSplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#252c31 guibg=#252c31 gui=NONE
 hi StatusLine ctermfg=231 ctermbg=59 cterm=bold guifg=#f0f0f0 guibg=#575e61 gui=bold
