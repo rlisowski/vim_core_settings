@@ -104,6 +104,7 @@ set hlsearch " When there is a previous search pattern, highlight all its matche
 set incsearch " While typing a search command, show where the pattern, as it was typed so far, matches.
 noremap <Leader>/ :set invhls<CR> " toggle highlight
 
+set omnifunc=syntaxcomplete#Complete
 set textwidth=120
 set autoread                    " Automatically reload changes if detected
 set wildmenu                    " Turn on WiLd menu
