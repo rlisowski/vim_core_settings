@@ -16,6 +16,7 @@ set autowriteall               " Automatically save before commands like :next a
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 if !has('nvim')
   set encoding=utf-8             " Use UTF-8 everywhere.
+  set signcolumn=yes             " always show signcolumn
 endif
 
 " ---------------
