@@ -345,14 +345,6 @@ command! QuickSpellingFix call QuickSpellingFix()
 nmap <silent> <leader>z :QuickSpellingFix<CR>
 " }}
 
-
-" ---------------
-" subversion blame
-" --------------- {{
-vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
-" }}
-
-
 " ---------------
 " shifting tabs
 " --------------- {{
@@ -380,28 +372,3 @@ inoremap <silent> <C-S-PageDown>  <C-r>=ShiftTab(1)<CR>
 noremap <silent> <C-S-PageUp>  :call ShiftTab(0)<CR>
 noremap <silent> <C-S-PageDown> :call ShiftTab(1)<CR>
 " }}
-
-" ---------------
-" File types settings
-" --------------- {{
-" CSS (tab width 2 chr)
-autocmd vimrc FileType css set et
-autocmd vimrc FileType css set sw=2
-autocmd vimrc FileType css set ts=2
-autocmd vimrc FileType css set sts=2
-" less (tab width 2 chr)
-autocmd vimrc FileType less set et
-autocmd vimrc FileType less set sw=2
-autocmd vimrc FileType less set ts=2
-autocmd vimrc FileType less set sts=2
-" JavaScript (tab width 2 chr)
-autocmd vimrc FileType javascript set et
-autocmd vimrc FileType javascript set sw=2
-autocmd vimrc FileType javascript set ts=2
-autocmd vimrc FileType javascript set sts=2
-" HTML (tab width 2 chr)
-autocmd vimrc FileType html set et
-autocmd vimrc FileType html set sw=2
-autocmd vimrc FileType html set ts=2
-autocmd vimrc FileType html set sts=2
-"  }}
