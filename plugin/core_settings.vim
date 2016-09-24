@@ -217,12 +217,14 @@ set mousemodel=popup            " the right mouse button causes a small pop-up m
 
 " without that moving lines in console vim not working
 if !has('gui_running')
-  let c='a'
-  while c <= 'z'
-    exec "set <A-".c.">=\e".c
-    exec "imap \e".c." <A-".c.">"
-    let c = nr2char(1+char2nr(c))
-  endw
+  if !has('nvim')
+    let c='a'
+    while c <= 'z'
+      exec "set <A-".c.">=\e".c
+      exec "imap \e".c." <A-".c.">"
+      let c = nr2char(1+char2nr(c))
+    endw
+  endif
 endif
 
 " These two options together determine the behavior when part of a
