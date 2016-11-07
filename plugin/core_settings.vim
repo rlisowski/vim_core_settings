@@ -186,6 +186,9 @@ augroup END
 
 " autosave kudos to http://blog.unixphilosopher.com/2015/02/a-more-betterer-autosave-in-vim.html
 autocmd vimrc FocusLost * if expand('%') != '' | update | endif
+if has('nvim')
+  autocmd vimrc BufLeave * if expand('%') != '' | update | endif
+endif
 
 " ---------------
 " folding
