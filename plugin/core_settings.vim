@@ -182,6 +182,7 @@ augroup vimrc
   autocmd!
 augroup END
 
+autocmd VimResized * wincmd =                    " Resize splits when the window is resized
 
 " ---------------
 " folding
