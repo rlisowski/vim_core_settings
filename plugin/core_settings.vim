@@ -91,7 +91,7 @@ map <silent> <F11> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscr
 " -------------
 if exists("+spelllang")
   let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
-  set spelllang=en_us,pl
+  set spelllang=en_gb,pl
   set spell
 endif
 
