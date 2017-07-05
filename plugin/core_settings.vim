@@ -170,7 +170,7 @@ set splitbelow                  " Split windows at bottom with :split
 set splitright                  " Split windows on right with :vsplit
 
 set ts=2 sts=2 sw=2 noexpandtab   " default indentation 2 spaces
-set relativenumber                " show lines number
+" set relativenumber                " show lines number
 set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
 set ff=unix                       " unix end of line
