@@ -6,3 +6,6 @@ endfun
 
 call SetupCommandAlias("W","w")
 call SetupCommandAlias("bufo","BufOnly")
+
+" copy current buffer path
+nmap cp :let @+ = expand("%")<CR>
