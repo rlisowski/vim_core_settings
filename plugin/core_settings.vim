@@ -240,14 +240,17 @@ set ttimeoutlen=200
 set matchtime=0
 
 " cursor shape
-" if has('nvim')
-"   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-" else
-"   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-"   let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-"   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-" endif
-
+if exists('$ITERM_PROFILE')
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
+end
 
 " moving lines
 nmap <A-j> ]e==
