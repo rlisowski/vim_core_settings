@@ -1,0 +1,7 @@
+snippet exm
+mail_delivery = double
+expect(mail_delivery).to receive(:deliver$0).with(no_args)
+expect($3).to receive(:$2).with($1).and_return(mail_delivery)
+endsnippet
+
+# vim:ft=snippets:
