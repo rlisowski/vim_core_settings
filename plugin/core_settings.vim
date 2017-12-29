@@ -9,7 +9,8 @@ filetype plugin indent on     " required!
 set nocompatible
 set hidden
 
-set shell=/bin/bash
+set shell=/bin/zsh
+" set shell=/bin/bash
 set noexrc                     " don't use local version of .(g)vimrc, .exrc
 set autoindent                 " Copy indent from current line when starting a new line
 set autowriteall               " Automatically save before commands like :next and :make
