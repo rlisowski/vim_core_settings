@@ -235,17 +235,21 @@ set ttimeoutlen=200
 set matchtime=0
 
 " cursor shape
-if exists('$ITERM_PROFILE')
-  if exists('$TMUX')
-    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-    let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
-    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-  else
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+if !has('nvim')
+  if exists('$ITERM_PROFILE')
+    if exists('$TMUX')
+      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+    else
+      let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+      let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+      let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+    endif
   endif
-end
+else
+  set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+endif
 
 " moving lines
 nmap <A-j> ]e==
