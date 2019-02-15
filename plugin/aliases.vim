@@ -6,6 +6,9 @@ endfun
 
 call SetupCommandAlias("W","w")
 call SetupCommandAlias("bufo","BufOnly")
+call SetupCommandAlias("bufo","BufOnly")
+call SetupCommandAlias("F","CtrlSF")
+call SetupCommandAlias("dhb","DeleteHiddenBuffers")
 
 " copy current buffer path
 nmap cp :let @+ = expand("%")<CR>
