@@ -181,5 +181,16 @@ hi CtrlSpaceSelected ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373
 hi CtrlSpaceNormal ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE
 hi CtrlSpaceFound ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
 
+" Special for Neomake
+hi NeomakeErrorSign ctermfg=red ctermbg=NONE cterm=NONE guifg=red guibg=NONE gui=NONE
+hi NeomakeWarningSign ctermfg=yellow guifg=yellow ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+hi NeomakeInfoSign ctermfg=white guifg=white ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+hi NeomakeMessageSign ctermfg=white guifg=white ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+
+hi NeomakeError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=red
+hi NeomakeWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=yellow
+hi NeomakeInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=white
+hi NeomakeMessage ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=white
+
 " ---
 
