@@ -57,7 +57,9 @@ if version >= 700 " Vim 7.x specific colors
   hi CursorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
   hi MatchParen ctermfg=180 ctermbg=NONE cterm=underline guifg=#dda790 guibg=NONE gui=underline
   hi Pmenu ctermfg=153 ctermbg=NONE cterm=NONE guifg=#bcdbff guibg=NONE gui=NONE
+  " hi Pmenu ctermfg=15 ctermbg=61 cterm=NONE guifg=#f8f8f2 guibg=#646e96 gui=NONE
   hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3f4b52 gui=NONE
+  " hi PmenuSel ctermfg=16 ctermbg=84 cterm=bold guifg=#282a36 guibg=#50fa7b gui=NONE
   hi Search ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
   hi lCursor ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
   " ?"
@@ -155,10 +157,10 @@ hi javaScriptRailsFunction ctermfg=186 ctermbg=NONE cterm=NONE guifg=#dad085 gui
 hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
 " Special for diff
-hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f0f0f0 guibg=#43820d gui=bold
-hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#880708 guibg=NONE gui=NONE
-hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#f0f0f0 guibg=#1c3657 gui=NONE
-hi DiffText ctermfg=231 ctermbg=0 cterm=bold guifg=#f0f0f0 guibg=#204a87 gui=bold
+hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#82ff16 guibg=NONE gui=bold
+hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#ff3537 guibg=NONE gui=NONE
+hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#91beff guibg=NONE gui=NONE
+hi DiffText ctermfg=231 ctermbg=0 cterm=bold guifg=#bccce2 guibg=NONE gui=bold
 
 " Special for yaml
 hi yamlKey ctermfg=153 ctermbg=NONE cterm=NONE guifg=#bcdbff guibg=NONE gui=NONE
@@ -184,13 +186,15 @@ hi CtrlSpaceFound ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b g
 " Special for Neomake
 hi NeomakeErrorSign ctermfg=red ctermbg=NONE cterm=NONE guifg=red guibg=NONE gui=NONE
 hi NeomakeWarningSign ctermfg=yellow guifg=yellow ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
-hi NeomakeInfoSign ctermfg=white guifg=white ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
-hi NeomakeMessageSign ctermfg=white guifg=white ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+hi NeomakeInfoSign ctermfg=59 guifg=#414e58 ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+hi NeomakeMessageSign ctermfg=59 guifg=#414e58 ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
 
 hi NeomakeError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=red
 hi NeomakeWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=yellow
-hi NeomakeInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=white
-hi NeomakeMessage ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=white
+hi NeomakeInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=#414e58
+hi NeomakeMessage ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=#414e58
 
+hi NeomakeVirtualtextInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#0d1011 gui=bold
+hi NeomakeVirtualtextError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#0d1011 gui=bold
+hi NeomakeVirtualtextWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#0d1011 gui=bold
 " ---
-
