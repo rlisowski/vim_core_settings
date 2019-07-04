@@ -194,7 +194,7 @@ hi NeomakeWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui
 hi NeomakeInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=#414e58
 hi NeomakeMessage ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=undercurl guisp=#414e58
 
-hi NeomakeVirtualtextInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#0d1011 gui=bold
-hi NeomakeVirtualtextError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#0d1011 gui=bold
-hi NeomakeVirtualtextWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#0d1011 gui=bold
+hi NeomakeVirtualtextInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
+hi NeomakeVirtualtextError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
+hi NeomakeVirtualtextWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
 " ---
