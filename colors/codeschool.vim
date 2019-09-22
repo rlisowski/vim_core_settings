@@ -64,7 +64,7 @@ if version >= 700 " Vim 7.x specific colors
   hi lCursor ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
   " ?"
   hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
-  let &colorcolumn="80,100,".join(range(120,999),",")
+  let &colorcolumn="".join(range(120,999),",")
   hi IncSearch ctermfg=16 ctermbg=107 cterm=NONE guifg=#182227 guibg=#8bb664 gui=NONE
   hi Directory ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3c98d9 guibg=NONE gui=NONE
 endif
