@@ -165,6 +165,9 @@ set wildignore+=*.sw?                                 " Vim swap files
 set wildignore+=*.DS_Store                            " OSX bullshit
 set wildignore+=*.orig                                " Merge resolution files
 
+set wildoptions=pum   " use popup menu
+set pumblend=0        " disable pseuod transparency for popup menu
+
 set winaltkeys=no
 
 set splitbelow                  " Split windows at bottom with :split
