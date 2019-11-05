@@ -12,4 +12,4 @@ call SetupCommandAlias("U","UndotreeToggle")
 call SetupCommandAlias("dhb","DeleteHiddenBuffers")
 
 " copy current buffer path
-nmap cp :let @+ = expand("%")<CR>
+nmap cp :let @+ = expand("%:.")<CR>
