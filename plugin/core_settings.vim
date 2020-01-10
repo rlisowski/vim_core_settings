@@ -317,29 +317,6 @@ set tags=./tags,tags,./.git/tags; " use ctags
 command -nargs=? -complete=file Todo execute "Ags" 'TODO\|FIXME\|XXX' <f-args>
 
 " ---------------
-" Trailing Whitespaces
-" --------------- {{
-function! <SID>StripTrailingWhitespaces(manual)
-  let current_filetype = &filetype
-  if current_filetype != 'markdown'
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-  elseif a:manual
-    echoerr "Trailing whitespaces are part of Markdown syntax. Clean them yourself."
-  endif
-endfunction
-
-autocmd vimrc BufWritePre * :call <SID>StripTrailingWhitespaces(0)
-" }}
-
-" ---------------
 " Quick spelling fix (first item in z= list)
 " --------------- {{
 function! QuickSpellingFix()
