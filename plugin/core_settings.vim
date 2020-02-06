@@ -78,9 +78,9 @@ set ttyfast                         " Indicates a fast terminal connection.
 set visualbell
 set t_vb=
 
-if exists('+colorcolumn')
-  set colorcolumn=120
-endif
+" if exists('+colorcolumn')
+"   set colorcolumn=120
+" endif
 
 " :w!! saves a file as root
 cmap w!! w !sudo tee % >/dev/null<CR>

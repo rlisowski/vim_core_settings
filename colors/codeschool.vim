@@ -59,8 +59,8 @@ hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3f4b52 gui=NONE
 hi PmenuSbar guifg=black guibg=white gui=NONE ctermfg=black ctermbg=white cterm=NONE
 hi Search ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
 hi lCursor ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=#3c474d gui=NONE
-hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
-let &colorcolumn="".join(range(120,999),",")
+" hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=NONE
+" let &colorcolumn="".join(range(120,999),",")
 hi IncSearch ctermfg=16 ctermbg=107 cterm=NONE guifg=#182227 guibg=#8bb664 gui=NONE
 hi Directory ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3c98d9 guibg=NONE gui=NONE
 hi NormalFloat ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#2e373b gui=NONE
