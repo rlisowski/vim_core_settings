@@ -87,6 +87,24 @@ cmap w!! w !sudo tee % >/dev/null<CR>
 " fullscreen mode for gvim
 map <silent> <F11> :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
+" https://neovim.io/doc/user/nvim_terminal_emulator.html#nvim-terminal-emulator-configuration
+let g:terminal_color_0  = '#3b4251'
+let g:terminal_color_1  = '#bf6069'
+let g:terminal_color_2  = '#a3be8b'
+let g:terminal_color_3  = '#eacb8a'
+let g:terminal_color_4  = '#81a1c1'
+let g:terminal_color_5  = '#b48dac'
+let g:terminal_color_6  = '#88c0d0'
+let g:terminal_color_7  = '#e5e9f0'
+let g:terminal_color_8  = '#4c556a'
+let g:terminal_color_9  = '#bf6069'
+let g:terminal_color_10 = '#a3be8b'
+let g:terminal_color_11 = '#eacb8a'
+let g:terminal_color_12 = '#81a1c1'
+let g:terminal_color_13 = '#b48dac'
+let g:terminal_color_14 = '#8fbcbb'
+let g:terminal_color_15 = '#eceef4'
+
 " -------------
 "  lang
 " -------------
@@ -173,7 +191,7 @@ set winaltkeys=no
 set splitbelow                  " Split windows at bottom with :split
 set splitright                  " Split windows on right with :vsplit
 
-set ts=2 sts=2 sw=2 noexpandtab   " default indentation 2 spaces
+set ts=2 sts=2 sw=2 expandtab   " default indentation 2 spaces
 " set relativenumber                " show lines number
 set number                        " show lines number
 " set nuw=6                       " column with line numbers is 6 chars width
@@ -263,32 +281,17 @@ imap <A-k> <Esc>[e==i
 vmap <A-j> ]egv=gv
 vmap <A-k> [egv=gv
 
-if has("gui_macvim")
-  " moving lines
-  nmap ∆ ]e==
-  nmap Ż [e==
-  imap ∆ <Esc>]e==i
-  imap Ż <Esc>[e==i
-  vmap ∆ ]egv=gv
-  vmap Ż [egv=gv
-
-  " Press Ctrl-Tab to switch between open tabs (like browser tabs) to
-  " the right side. Ctrl-Shift-Tab goes the other way.
-  noremap <D-Right> :tabnext<CR>
-  noremap <D-Left> :tabprev<CR>
-
-  " Switch to specific tab numbers with Command-number
-  noremap <D-1> :tabn 1<CR>
-  noremap <D-2> :tabn 2<CR>
-  noremap <D-3> :tabn 3<CR>
-  noremap <D-4> :tabn 4<CR>
-  noremap <D-5> :tabn 5<CR>
-  noremap <D-6> :tabn 6<CR>
-  noremap <D-7> :tabn 7<CR>
-  noremap <D-8> :tabn 8<CR>
-  noremap <D-9> :tabn 9<CR>
-  " Command-0 goes to the last tab
-  noremap <D-0> :tablast<CR>
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    " moving lines
+    nmap ∆ ]e==
+    nmap Ż [e==
+    imap ∆ <Esc>]e==i
+    imap Ż <Esc>[e==i
+    vmap ∆ ]egv=gv
+    vmap Ż [egv=gv
+  endif
 endif
 " }}
 
