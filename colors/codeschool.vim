@@ -193,4 +193,15 @@ hi NeomakeMessage ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui
 hi NeomakeVirtualtextInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
 hi NeomakeVirtualtextError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
 hi NeomakeVirtualtextWarning ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
+
+" Special for EasyMotion
+hi EasyMotionTarget ctermfg=yellow guifg=yellow ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+hi link EasyMotionShade  Comment
+
+hi link EasyMotionTarget2First MatchParen
+hi link EasyMotionTarget2Second MatchParen
+
+hi link EasyMotionMoveHL Search
+hi link EasyMotionIncSearch Search
+
 " ---
