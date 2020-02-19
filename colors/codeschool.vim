@@ -204,4 +204,9 @@ hi link EasyMotionTarget2Second MatchParen
 hi link EasyMotionMoveHL Search
 hi link EasyMotionIncSearch Search
 
+" special for neoterm
+hi FloatermNF guibg=#252c31
+hi link FloatermBorderNF  Comment
+
+
 " ---
