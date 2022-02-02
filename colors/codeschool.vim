@@ -18,7 +18,7 @@ hi NonText ctermfg=59 ctermbg=0 cterm=NONE guifg=#414e58 guibg=NONE gui=NONE
 
 hi SignColumn ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE
 
-hi Cursor ctermfg=16 ctermbg=145 cterm=NONE guifg=#182227 guibg=#9ea7a6 gui=NONE
+hi Cursor ctermfg=16 ctermbg=145 cterm=NONE guifg=#182227 guibg=#666B6E gui=NONE
 hi LineNr ctermfg=102 ctermbg=235 cterm=NONE guifg=#84898c guibg=#252c31 gui=NONE
 hi CursorLineNr ctermfg=102 ctermbg=235 cterm=NONE guifg=#8db600 guibg=#2a343a gui=NONE
 
@@ -208,5 +208,20 @@ hi link EasyMotionIncSearch Search
 hi FloatermNF guibg=#252c31
 hi link FloatermBorderNF  Comment
 
+" special for Telescope
+hi TelescopeSelection      ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2e373b gui=bold " selected item
+hi TelescopeSelectionCaret guifg=#CC241D " selection caret
+hi TelescopeMultiSelection guifg=#928374 " multisections
+hi TelescopeNormal         ctermfg=231 ctermbg=0 cterm=NONE guifg=#f0f0f0 guibg=#252c31 gui=NONE  " floating windows created by telescope.
 
+" Border highlight groups.
+hi TelescopeBorder         guifg=#ffffff
+hi TelescopePromptBorder   guifg=#ffffff
+hi TelescopeResultsBorder  guifg=#ffffff
+hi TelescopePreviewBorder  guifg=#ffffff
+
+" Used for highlighting characters that you match.
+hi TelescopeMatching       guifg=#8bb664
+" Used for the prompt prefix
+" hi TelescopePromptPrefix   guifg=red
 " ---
