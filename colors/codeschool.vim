@@ -48,6 +48,16 @@ hi SpellCap guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=
 hi SpellLocal guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=underline guisp=#FF6C60 " undercurl color
 hi SpellRare guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=underline guisp=#FF6C60 " undercurl color
 
+hi DiagnosticInfo ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
+hi DiagnosticError ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#ff6c60 guibg=NONE gui=italic
+hi DiagnosticHint ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
+hi DiagnosticWarn ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#7c7b7b guibg=NONE gui=italic
+
+hi DiagnosticSignError ctermfg=1 guifg=#ff6c60
+hi DiagnosticSignWarn ctermfg=3 guifg=Orange
+hi DiagnosticSignInfo ctermfg=4 guifg=LightBlue
+hi DiagnosticSignHint ctermfg=7 guifg=LightGrey
+
 " Message displayed in lower left, such as --INSERT--
 " hi ModeMsg guifg=black guibg=#C6C5FE gui=BOLD ctermfg=black ctermbg=cyan cterm=BOLD
 
